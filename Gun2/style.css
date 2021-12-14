@@ -1,0 +1,13 @@
+/*
+font-family: 'Roboto',sans-serif;
+font-family: 'Roboto Slab',serif;
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+table td {
+    font-family: 'Roboto Slab', serif;
+    font-size: larger;
+}
