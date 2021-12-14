@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--karakter seti var bu UTF-8'in içinde-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlk Sayfam</title>
+    <link rel="stylesheet" href="ders1.css">
+    <style>
+        /* style tag'ın içine yazdığımız tüm kodlar CSS'dir. */
+        
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: green;
+            border: 2px solid #059862;
+            border-radius: 25px 0 25px 0;
+            padding: 25px;
+            transition: all 1s;
+            /*geçişlerin ne kadar sürede olacağı. Yazmazsak geçişler hızlı olur*/
+        }
+        
+        p:hover {
+            border-radius: 0;
+            border-radius: 0 25px 0 25px;
+            box-shadow: 5px 3px;
+            border-color: black;
+            transform: scale(1.1);
+            /*Büyütünce gözükmüyor ama olsun denemelik*/
+        }
+    </style>
+</head>
+
+<body style="background-color:lightblue;">
+    <h1>Merhaba Dünya</h1>
+    <h3>h3</h3>
+    <h6>h6</h6>
+    <p style="color:red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque <b>maxime</b> cumque qui,
+        <br>
+        <br>
+        <strong>velit</strong> a eos, inventore exercitationem, nesciunt <i>assumenda</i> eius! Consequatur
+        <em>architecto</em> eveniet unde et consectetur voluptatem! Autem, pariatur?</p>
+
+    <p>
+        <del>Lorem</del> ipsum dolor sit amet consectetur adipisicing elit. <ins>Ipsam</ins> iste et, fuga autem soluta asperiores ex nulla perspiciatis reiciendis quis <mark><u>repellendus</u></mark> beatae voluptatibus voluptate obcaecati, a molestiae
+        sed magni dolores. x
+        <sup>3</sup> x
+        <sub>1</sub>,x<sub>2</sub>
+    </p>
+    <hr>
+    <ol type="a">
+        <li class="ozel">
+            <span class="indirim">Çay</span>
+            <li class="ozel">Ayran</li>
+            <li>Çay</li>
+            <li>Ayran</li>
+            <li>Oralet</li>
+            <li>Kahveler
+                <ol>
+                    <li>Türk Kahvesi</li>
+                    <li>Latte</li>
+                    <li class="ozel indirim">Mırra</li>
+                </ol>
+            </li>
+    </ol>
+    <img src="../imgs/kadin.jpg" alt="Kadın Portre Fotoğrafı" width="100" height="120" id="img-avatar" />
+    <!-- id'ler sayfada tek,özel olmalı. başka sayfada tekrar kullanılabilir sorun yok. -->
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Kategori Adı</th>
+            <th>Açıklama</th>
+        </tr>
+        <tr>
+            <td>İçecekler</td>
+            <td>Sıcak soğuk içecekler</td>
+        </tr>
+        <tr>
+            <td>Ana yemekler</td>
+            <td>Tencere yemekleri</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
