@@ -20,25 +20,17 @@ function konumBul() {
                 mapTypeId: 'satellite' //uydu görüntüsü sağlıyor.
             });
             const marker = new google.maps.Marker({
-                position: evKonum,
+                position: konum,
                 map: googleMap,
                 title: 'Şu an buradasınız.'
             });
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 14,
-                center: { lat: 42.3726399, lng: -71.1096528 },
-              });
-              const bikeLayer = new google.maps.BicyclingLayer();
+            // const map = new google.maps.Map(document.getElementById("map"), {
+            //     zoom: 14,
+            //     center: { lat: 42.3726399, lng: -71.1096528 },
+            //   });
+            //   const bikeLayer = new google.maps.BicyclingLayer();
             
-              bikeLayer.setMap(map);
-            
-            const map2 = new google.maps.Map(document.getElementById("map2"), {
-                zoom: 13,
-                center: { lat: 41.044777, lng: 29.007202 },
-              });
-              const trafficLayer = new google.maps.TrafficLayer();
-            
-              trafficLayer.setMap(map2);
+            //   bikeLayer.setMap(map);
             
             
             // directionsRenderer.setMap(googleMap);
@@ -49,8 +41,8 @@ function konumBul() {
             //     destination: evKonum,
             //     travelMode: google.maps.TravelMode.DRIVING,
             // })
-            // .then((response)) => {
-            //     directionsRenderer.setDirections(response);
+            // .then((response) => {
+            //     directionsRenderer.setDirections(response)
             // })
             // .catch((e) => 
             // window.alert("Directions request failed due to " + status)

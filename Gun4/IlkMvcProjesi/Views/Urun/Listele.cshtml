@@ -1,0 +1,8 @@
+@model List<Urun>
+
+@foreach (var item in Model)
+{
+<p>
+    @item.Id - @item.UrunAdi - @item.Fiyat    
+</p>
+}
